@@ -1,0 +1,10 @@
+pages = [{"l":"index.html#","e":false,"i":"","n":"Sentiments Docs","t":"Sentiments Docs","d":"","k":"static","x":""},
+{"l":"o1/sentiment.html#","e":false,"i":"","n":"o1.sentiment","t":"o1.sentiment","d":"","k":"package","x":""},
+{"l":"o1/sentiment.html#cleanText-fffff2ca","e":false,"i":"","n":"cleanText","t":"cleanText(text: String): String","d":"o1.sentiment","k":"def","x":""},
+{"l":"o1/sentiment/ui.html#","e":false,"i":"","n":"o1.sentiment.ui","t":"o1.sentiment.ui","d":"","k":"package","x":""},
+{"l":"o1/sentiment/ui.html#runSentimentApp-94c","e":false,"i":"","n":"runSentimentApp","t":"runSentimentApp(): Unit","d":"o1.sentiment.ui","k":"def","x":""},
+{"l":"o1/sentiment/SentimentAnalyzer.html#","e":false,"i":"","n":"SentimentAnalyzer","t":"SentimentAnalyzer","d":"o1.sentiment","k":"class","x":""},
+{"l":"o1/sentiment/SentimentAnalyzer.html#rate-fffffd22","e":false,"i":"","n":"rate","t":"rate(wordOrPhrase: String): Option[Double]","d":"o1.sentiment.SentimentAnalyzer","k":"def","x":""},
+{"l":"o1/sentiment/SentimentAnalyzer$.html#","e":false,"i":"","n":"SentimentAnalyzer","t":"SentimentAnalyzer","d":"o1.sentiment","k":"object","x":""},
+{"l":"o1/sentiment/SentimentAnalyzer$.html#fromFile-82f","e":false,"i":"","n":"fromFile","t":"fromFile(trainingDataPath: String): SentimentAnalyzer","d":"o1.sentiment.SentimentAnalyzer","k":"def","x":""},
+{"l":"o1/sentiment/SentimentAnalyzer$.html#fromSource-fffff2a5","e":false,"i":"","n":"fromSource","t":"fromSource(trainingData: Source): SentimentAnalyzer","d":"o1.sentiment.SentimentAnalyzer","k":"def","x":""}];
