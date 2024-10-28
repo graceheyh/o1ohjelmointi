@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/Ave/Ave.iml" filepath="$PROJECT_DIR$/Ave/Ave.iml" />
       <module fileurl="file://$PROJECT_DIR$/Blood/Blood.iml" filepath="$PROJECT_DIR$/Blood/Blood.iml" />
       <module fileurl="file://$PROJECT_DIR$/CarSim/CarSim.iml" filepath="$PROJECT_DIR$/CarSim/CarSim.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CitySim/CitySim.iml" filepath="$PROJECT_DIR$/CitySim/CitySim.iml" />
       <module fileurl="file://$PROJECT_DIR$/Election/Election.iml" filepath="$PROJECT_DIR$/Election/Election.iml" />
       <module fileurl="file://$PROJECT_DIR$/FlappyBug/FlappyBug.iml" filepath="$PROJECT_DIR$/FlappyBug/FlappyBug.iml" />
       <module fileurl="file://$PROJECT_DIR$/Football1/Football1.iml" filepath="$PROJECT_DIR$/Football1/Football1.iml" />
@@ -21,10 +22,12 @@
       <module fileurl="file://$PROJECT_DIR$/Oliointro/Oliointro.iml" filepath="$PROJECT_DIR$/Oliointro/Oliointro.iml" />
       <module fileurl="file://$PROJECT_DIR$/Pikkusovelluksia/Pikkusovelluksia.iml" filepath="$PROJECT_DIR$/Pikkusovelluksia/Pikkusovelluksia.iml" />
       <module fileurl="file://$PROJECT_DIR$/Pong/Pong.iml" filepath="$PROJECT_DIR$/Pong/Pong.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Robots/Robots.iml" filepath="$PROJECT_DIR$/Robots/Robots.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sentiments/Sentiments.iml" filepath="$PROJECT_DIR$/Sentiments/Sentiments.iml" />
       <module fileurl="file://$PROJECT_DIR$/Snake/Snake.iml" filepath="$PROJECT_DIR$/Snake/Snake.iml" />
       <module fileurl="file://$PROJECT_DIR$/Stars/Stars.iml" filepath="$PROJECT_DIR$/Stars/Stars.iml" />
       <module fileurl="file://$PROJECT_DIR$/Traits/Traits.iml" filepath="$PROJECT_DIR$/Traits/Traits.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Viinaharava/Viinaharava.iml" filepath="$PROJECT_DIR$/Viinaharava/Viinaharava.iml" />
       <module fileurl="file://$PROJECT_DIR$/o1ohjelmat.iml" filepath="$PROJECT_DIR$/o1ohjelmat.iml" />
     </modules>
   </component>
