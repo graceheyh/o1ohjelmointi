@@ -12,7 +12,7 @@ package o1.blood2
     val preamble = s"$donor donating to $recipient".padTo(16, ' ')
     println(preamble + " → " + okOrNot(donor.canDonateTo(recipient)))
 
-  /*
+
   println("\nUsing ABO blood types only:")
   for donor <- ABO.values; recipient <- ABO.values do
     val preamble = s"$donor donating to $recipient".padTo(18, ' ')
@@ -23,7 +23,7 @@ package o1.blood2
   for donor <- allABORh; recipient <- allABORh do
     val preamble = s"$donor donating to $recipient".padTo(20, ' ')
     println(preamble + " → " + okOrNot(donor.canDonateTo(recipient)))
-  */
+
 
 end bloodTest
 

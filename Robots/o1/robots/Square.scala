@@ -54,7 +54,7 @@ object Wall extends Square:
     * @param arrivee  the robot attempting to arrive in the square
     * @return `false` since the robot’s arrival failed */
   def addRobot(arrivee: RobotBody) =
-    // TODO: implementation partially missing
+    arrivee.destroy()
     false
 
   /** Does nothing, since there is no robot to remove in a wall square. */
@@ -95,8 +95,13 @@ class Floor extends Square:
     * @param arrivee  the robot attempting to arrive in the square
     * @return `true` if `arrivee` was successfully placed in the square, `false` if a collision occurred */
   def addRobot(arrivee: RobotBody) =
-    this.occupant = Some(arrivee)  // TODO: replace with a full implementation
-    true
+    occupant match
+      case None =>
+        this.occupant = Some(arrivee)
+        true
+      case Some(occupant) =>
+        occupant.destroy()
+        false
 
 end Floor
 

@@ -16,6 +16,17 @@ end Rhesus
 
 // Write your ABO enumeration here.
 
+enum ABO(val antigens: String):
+
+  case A extends ABO("A")
+  case B extends ABO("B")
+  case AB extends ABO("AB")
+  case O extends ABO("")
+
+  def canDonateTo(recipient: ABO) =
+    this == recipient || this.antigens == "" || ((this.antigens == "A" || this.antigens == "B") && recipient.antigens == "AB")
+
+  def canReceiveFrom(donor: ABO) = donor.canDonateTo(this)
 
 
 

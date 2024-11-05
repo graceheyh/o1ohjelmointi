@@ -44,7 +44,8 @@ class Simulator:
 
   /** Returns all the locations in the city that contain the given demographic. */
   def findDemographic(demographic: Demographic): Vector[GridPos] =
-    cityMap(
+    cityMap.allPositions.filter(cityMap.elementAt(_) == demographic)
+
 
 
   /** Returns all the locations in the city being simulated. */
@@ -71,7 +72,17 @@ class Simulator:
     * Vacant locations are never returned by this method (i.e., they count as satisfied).
     * Any household with zero neighbors is considered to be satisfied. */
   def dissatisfiedResidents: Vector[GridPos] =
-    ??? // TODO: implementation missing
+    val occupiedPlaces = cityMap.allPositions.filter(cityMap.elementAt(_) != Vacant)
+    def similarNeighbours(resident: GridPos): Boolean =
+      val neigh = cityMap.neighbors(resident, true).filter(_ != Vacant)
+      if neigh.nonEmpty then
+        if neigh.count(_ == cityMap.elementAt(resident)).toDouble / neigh.size.toDouble * 100.0 < similarityDesired then
+          true
+        else
+          false
+      else
+        false
+    occupiedPlaces.filter(similarNeighbours)
 
 
   /** Advances the most recently launched simulation by one step, moving all dissatisfied
@@ -97,7 +108,12 @@ class Simulator:
   def moveResidents() =
     val vacantAddresses = this.findDemographic(Vacant).toBuffer
     if vacantAddresses.nonEmpty then
-      DoNothing // TODO: replace this with a proper implementation
+      val movers = Random.shuffle(dissatisfiedResidents)
+      for m <- movers do
+        val randomIndex = Random.nextInt(vacantAddresses.size)
+        val randomPlace = vacantAddresses.apply(randomIndex)
+        vacantAddresses(randomIndex) = m
+        cityMap.swap(m, randomPlace)
 
 
   /** Returns a `Map` whose keys are all the demographics present in the city ([[Vacant]] included)
